@@ -4,10 +4,8 @@ from bs4 import BeautifulSoup
 import re
 from collections import Counter
 from textblob import TextBlob
-from langdetect import detect
-from googletrans import Translator
-from nltk.corpus import stopwords
-import nltk
+# from nltk.corpus import stopwords
+# import nltk
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -20,11 +18,11 @@ import pandas as pd
 st.set_page_config(page_title='Amazon Product Reviews Analysis', layout='wide')
 
 # Initialize translator and set of stop words
-translator = Translator()
-stop_words = set(stopwords.words('english'))
+# translator = Translator()
+# stop_words = set(stopwords.words('english'))
 
 # Download stopwords if not already downloaded
-nltk.download('stopwords')
+# nltk.download('stopwords')
 
 # Headers for web scraping
 headers = {
